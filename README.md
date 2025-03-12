@@ -56,13 +56,13 @@ Before you begin, ensure you have the following installed:
 1.  **Clone the repository:**
 
     ```bash
-    git clone <repository_url>
+    git clone <[repository_url](https://github.com/Mutai-Gilbert/wira-coming-soon.git)>
     ```
 
 2.  **Navigate to the project directory:**
 
     ```bash
-    cd <project_directory>
+    cd <wira-coming-soon>
     ```
 
 3.  **Install dependencies:**
