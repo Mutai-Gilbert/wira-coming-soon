@@ -12,6 +12,61 @@ body {
   }
 }
 
+/* Phone Input Styling */
+.PhoneInput {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 0.375rem;
+  border: 1px solid hsl(var(--input));
+  background-color: transparent;
+  padding: 0 0.75rem;
+}
+
+.PhoneInput:focus-within {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+.PhoneInputCountry {
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.PhoneInputCountryIcon {
+  width: 1.5rem;
+  height: 1rem;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.PhoneInputCountrySelectArrow {
+  margin-left: 0.25rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-style: solid;
+  border-color: currentColor transparent transparent;
+  border-width: 0.25rem 0.25rem 0;
+  opacity: 0.7;
+}
+
+.PhoneInputInput {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 0;
+  outline: none;
+  font-size: 0.875rem;
+  height: 100%;
+}
+
+/* Remove the phone-input-container div that was wrapping the component */
+.phone-input-container {
+  width: 100%;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

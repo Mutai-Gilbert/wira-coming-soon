@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form"
 import { z } from "zod"
 import PhoneInput from "react-phone-number-input"
 import "react-phone-number-input/style.css"
+import flags from 'react-phone-number-input/flags'
 
 import { Button } from "@/components/ui/button"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
@@ -212,17 +213,15 @@ export function CompanyForm() {
               <FormItem>
                 <FormLabel>Contact Phone</FormLabel>
                 <FormControl>
-                  <div className="phone-input-container">
-                    <PhoneInput
-                      international
-                      countryCallingCodeEditable={false}
-                      defaultCountry="US"
-                      placeholder="Enter phone number"
-                      value={field.value}
-                      onChange={field.onChange}
-                      className="h-10"
-                    />
-                  </div>
+                  <PhoneInput
+                    flags={flags}
+                    international
+                    countryCallingCodeEditable={false}
+                    defaultCountry="US"
+                    placeholder="Enter phone number"
+                    value={field.value}
+                    onChange={field.onChange}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
